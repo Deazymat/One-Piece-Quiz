@@ -104,12 +104,27 @@ highScores.push({initials: initials, score: correctAnswers});
 localStorage.setItem("highScores", JSON.stringify(highScores))
 }
 
+
 function gameOver() {
   clearInterval(timer);
   quizContainer.style.display = "none";
   timerElement.style.display = "none";
 
-  alert("Game over")
+  alert("Game over! Correct Answers" + correctAnswers);
+  saveHighScores();
+  showHighScores();
 
   // ... (same game over code as before) ...
+}
+function showHighScores() {
+  var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+  highScores.sort((a, b) => b.score - a.score);
+  var highScoresList = document.createElement('ul');
+  highScores.forEach(function(score) {
+    var li = document.createElement('li');
+    li.textContent = score.initials + ':' + score.score;
+    highScoresList.appendChild(li);
+  });
+document.body.appendChild(highScoresList);
+
 }

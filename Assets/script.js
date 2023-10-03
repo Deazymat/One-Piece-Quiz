@@ -2,7 +2,7 @@ var startButton = document.getElementById("startButton");
 var timerElement = document.getElementById("timer");
 var quizContainer = document.getElementById("quizContainer");
 var questionElement = document.getElementById("question");
-var characters = ["Luffy", "Zoro", "Sanji", "Jimbei", "Chopper"];
+var characters = ["Luffy", "Zoro", "Sanji", "Jimbei", "Chopper", "Nami"];
 var choiceButtons = [
   document.getElementById("choice1"),
   document.getElementById("choice2"),
@@ -11,36 +11,35 @@ var choiceButtons = [
 ];
 
 var questions = [
-
   {
-    question: "Who is the best in the Straw-hats",
-    options: [],
-    answer: "",
+    question: "Who's uses sandals as a weapon in the Straw-hats",
+    options: ["Luffy", "Zoro", "Jimbei", "Chopper"],
+    answer: "Luffy",
   },
-   {
-    question: "",
-    options: [],
-    answer: "",
+  {
+    question: "Who uses a stick to shoot clouds",
+    options: ["Sanji", "Jimbei", "Chopper", "Nami"],
+    answer: "Nami",
   },
-   {
-    question: "",
-    options: [],
-    answer: "",
+  {
+    question: "Who's always has a death wish",
+    options: ["Zoro", "Sanji", "Nami", "Chopper"],
+    answer: "Zoro",
   },
-   {
-    question: "",
-    options: [],
-    answer: "",
+  {
+    question: "Who's always packing the medicine",
+    options: ["Chopper", "Sanji", "Jimbei", "Nami"],
+    answer: "Chopper",
   },
-   {
-    question: "",
-    options: [],
-    answer: "",
+  {
+    question: "Who got that strong Fish Chop",
+    options: [ "Nami", "Jimbei", "Chopper","Luffy", ],
+    answer: "Jimbei",
   },
-   {
-    question: "",
-    options: [],
-    answer: "",
+  {
+    question: "Who always gets them nose bleeds",
+    options: ["Sanji","Luffy", "Zoro", "Chopper"],
+    answer: "Sanji",
   },
 
   // ... (same questions array as before) ...

@@ -2,6 +2,7 @@ var startButton = document.getElementById("startButton");
 var timerElement = document.getElementById("timer");
 var quizContainer = document.getElementById("quizContainer");
 var questionElement = document.getElementById("question");
+var characters = ["Luffy", "Zoro", "Sanji", "Jimbei", "Chopper"];
 var choiceButtons = [
   document.getElementById("choice1"),
   document.getElementById("choice2"),
@@ -10,6 +11,38 @@ var choiceButtons = [
 ];
 
 var questions = [
+
+  {
+    question: "Who is the best in the Straw-hats",
+    options: [],
+    answer: "",
+  },
+   {
+    question: "",
+    options: [],
+    answer: "",
+  },
+   {
+    question: "",
+    options: [],
+    answer: "",
+  },
+   {
+    question: "",
+    options: [],
+    answer: "",
+  },
+   {
+    question: "",
+    options: [],
+    answer: "",
+  },
+   {
+    question: "",
+    options: [],
+    answer: "",
+  },
+
   // ... (same questions array as before) ...
 ];
 

@@ -96,12 +96,20 @@ function checkAnswer(event) {
     gameOver();
   }
 }
+function saveHighScores() {
+var initials = prompt("Enter your initials:");
+if (initials === null || initials === "") return;
+var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+highScores.push({initials: initials, score: correctAnswers});
+localStorage.setItem("highScores", JSON.stringify(highScores))
+}
 
 function gameOver() {
   clearInterval(timer);
-
   quizContainer.style.display = "none";
   timerElement.style.display = "none";
+
+  alert("Game over")
 
   // ... (same game over code as before) ...
 }

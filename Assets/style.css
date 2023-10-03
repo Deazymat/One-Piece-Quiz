@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 4px solid #4CAF50;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#startButton {
+    display: block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 150px;
+}
+
+#startButton:hover {
+    background-color: #3f8f3f;
+}
+
+#question {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0073ad;
+}
+
+h2,
+p,
+label {
+    text-align: center;
+}
+
+.gameOverText,
+.scoreText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.initialsLabel {
+    display: block;
+    margin-top: 1rem;
+}
+
+input[type="text"] {
+    display: block;
+    width: 200px;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3f8f3f;
+}

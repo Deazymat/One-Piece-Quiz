@@ -113,3 +113,83 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #3f8f3f;
 }
+#highScoresContainer {
+    max-width: 300px;
+    margin: 20px auto;
+    border: 2px solid #555;
+    /* Darker border for clear outline */
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* subtle shadow for a lifted look */
+    background-color: #fff;
+    /* solid white background */
+}
+
+#highScoresList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#highScoresList li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+    /* smooth transition for hover effect */
+}
+
+#highScoresList li:last-child {
+    border-bottom: none;
+    /* removing the bottom border for the last item */
+}
+
+#highScoresList li:hover {
+    background-color: #f5f5f5;
+    /* subtle gray for hover */
+}
+
+.initials,
+.score {
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.initials {
+    font-weight: 600;
+    color: #333;
+}
+
+.score {
+    font-weight: 400;
+    color: #555;
+}
+/* This will center child elements within the highScoresContainer */
+#highScoresContainer {
+    text-align: center;
+}
+
+#resetScores,
+#playAgain {
+    display: inline-block;
+    /* This makes them sit side by side */
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ccc;
+    /* Neutral gray background */
+    color: white;
+    margin: 0.5rem;
+    /* Provide spacing around both buttons */
+    cursor: pointer;
+}
+
+#resetScores {
+    background-color: #FF4136;
+}
+
+#playAgain {
+    background-color: #4CAF50;
+}

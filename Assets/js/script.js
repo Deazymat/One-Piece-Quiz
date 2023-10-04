@@ -121,7 +121,7 @@ function showHighScores() {
   var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
   highScores.sort((a, b) => b.score - a.score);
 
-  var highScoresList = document.createElement('highScoresList');
+  var highScoresList = document.getElementById('highScoresList');
   highScoresList.innerHTML = "";
 
   highScores.forEach(function(score) {
@@ -134,3 +134,26 @@ function showHighScores() {
 document.getElementById('highScoresContainer').style.display = 'block';
 
 }
+var resetButton = document.getElementById("resetScores");
+
+resetButton.addEventListener("click", function () {
+  localStorage.removeItem("highScores"); // Clearing the high scores from local storage
+  document.getElementById("highScoresList").innerHTML = ""; // Clearing the displayed list
+  alert("High scores have been reset!"); // Informing the user
+});
+var playAgainButton = document.getElementById("playAgain");
+
+playAgainButton.addEventListener("click", function () {
+  // Hide the high scores container
+  document.getElementById("highScoresContainer").style.display = "none";
+
+  // Reset the game variables
+  timeLeft = 30;
+  currentQuestionIndex = 0;
+  correctAnswers = 0;
+
+  // Display the start button
+  startButton.style.display = "block";
+  timerElement.textContent = "Time left: 30";
+});
+

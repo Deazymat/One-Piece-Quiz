@@ -117,14 +117,20 @@ function gameOver() {
   // ... (same game over code as before) ...
 }
 function showHighScores() {
+  
   var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
   highScores.sort((a, b) => b.score - a.score);
-  var highScoresList = document.createElement('ul');
+
+  var highScoresList = document.createElement('highScoresList');
+  highScoresList.innerHTML = "";
+
   highScores.forEach(function(score) {
-    var li = document.createElement('li');
+
+ var li = document.createElement('li');
     li.textContent = score.initials + ':' + score.score;
     highScoresList.appendChild(li);
+
   });
-document.body.appendChild(highScoresList);
+document.getElementById('highScoresContainer').style.display = 'block';
 
 }

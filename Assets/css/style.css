@@ -193,3 +193,13 @@ input[type="submit"]:hover {
 #playAgain {
     background-color: #4CAF50;
 }
+#quizContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* takes the full height of its parent, i.e., body */
+    text-align: center;
+    /* this will center the text inside the container */
+}
